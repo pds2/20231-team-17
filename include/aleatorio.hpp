@@ -7,6 +7,11 @@
 #include <cstdlib>
 #include <string>
 
+#include "ausiliares.hpp"
+
+//retorna qntd de linha no arquivo
+int contalinha(int num);
+
 //Retorna uma palavra aleatória
 std::wstring palavra_adivinhada(int numm);
 

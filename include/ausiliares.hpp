@@ -8,6 +8,9 @@
 #include <fstream>
 #include <map>
 #include <vector>
+#include <filesystem>
+
+namespace fs = std::filesystem;
 
 //Ignora tudo até o próximo '\n' para evitar erros de output.
 void ignoreLine();
@@ -15,6 +18,9 @@ void ignoreLinew();
 
 //Pega o número de letras com que o jogador que jogar, considerando inputs inválidos.
 int getNumLetras();
+
+//Pega o caminho das lista com as palavras
+std::string get_arquivo(int num);
 
 //Transforma uma string em maiscula.
 std::wstring maiscula(std::wstring word);

@@ -1,4 +1,4 @@
-#include "../include/ausiliares.hpp"
+#include "ausiliares.hpp"
 
 void ignoreLine() {
     std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
@@ -8,6 +8,22 @@ void ignoreLinew() {
     std::wcin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
 }
 
+std::string get_arquivo(int num) {
+    fs::path cdw = fs::current_path();
+    fs::path caminho5 = cdw / "listas" / "lista5letrasUTF8.txt";
+    fs::path caminho6 = cdw / "listas" / "lista6letrasUTF8.txt";
+    fs::path caminho7 = cdw / "listas" / "lista7letrasUTF8.txt";
+
+    std::string arq;
+    if (num == 5) {
+        arq = fs::absolute(caminho5); }
+    else if (num == 6) {
+        arq = fs::absolute(caminho6); }
+    else {
+        arq = fs::absolute(caminho7); }
+
+    return arq;
+}
 
 int getNumLetras() {
     while(true) {
@@ -45,14 +61,8 @@ std::wstring maiscula(std::wstring word) {
 
 bool existe(std::wstring pal, int num) {
 
-    std::string arq;
+    std::string arq = get_arquivo(num);
     std::wstring aux;
-    if (num == 5) {
-        arq = "../listas/lista5letras1.txt"; }
-    else if (num == 6) {
-        arq = "../listas/lista6letras.txt"; }
-    else {
-        arq = "../listas/lista7letras.txt"; }
     aux = maiscula(pal);
 
     std::wstring line;
@@ -62,10 +72,12 @@ bool existe(std::wstring pal, int num) {
         while (!myfile.eof()) {
             std::getline(myfile, line);
             if (line.compare(0, num, aux) == 0) {
-                return true; } }          
-        myfile.close(); }
+                myfile.close();
+                return true; } } }
 
-    else { std::cout << "Unable to open file"; } 
+    else { 
+        std::cout << "Unable to open file"; 
+        return false; } 
     return false;
 }
 

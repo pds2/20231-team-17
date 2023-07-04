@@ -1,4 +1,4 @@
-#include "../include/partida.hpp"
+#include "partida.hpp"
 
 Partida::Partida(int nletras) {
     _Padivinha = palavra_adivinhada(nletras);
