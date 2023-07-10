@@ -24,9 +24,6 @@ O Enigma destina-se a jogadores de todas as idades que gostam de jogos de palavr
 # :hammer: Funcionalidades do jogo:
 
 - `Interface`:Interface intuitiva e agradável com gráficos atraentes e cores vivas.
-
-- `Dicionário`:Dicionário integrado para verificar a ortografia e o significado das palavras.
-
 - `Dicas`: Dicas limitadas para ajudar os jogadores a encontrar palavras relacionadas.
 - `Diferentes modos de jogo`: Níveis de dificuldade ajustáveis.
 
@@ -68,21 +65,13 @@ $ cd 20231-team-17
 # Vá para a pasta $pasta
 $ cd $pasta
 
-# Instale as dependências
-$
 
-# Execute a aplicação em modo de desenvolvimento
-$ 
-
-# O servidor inciará na porta:x - acesse <http://localhost:x>
 ```
 
 ### 🛠 Linguagens, dependêcias e libs:
 
 As seguintes ferramentas foram usadas na construção do projeto:
 
-- [HTML](https://html.com/)
-- [CSS](https://www.w3.org/Style/CSS/Overview.en.html)
 - [C++](https://cplusplus.com/)
 
 
