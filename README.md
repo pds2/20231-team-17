@@ -25,7 +25,7 @@ O Enigma destina-se a jogadores de todas as idades que gostam de jogos de palavr
 
 # :hammer: Funcionalidades do jogo:
 
-- Possibilidade de jogar com palavras de 5,6 ou 7 letras.
+- Possibilidade de jogar com palavras de 5, 6 ou 7 letras.
 - `Diferentes modos de jogo`: Níveis de dificuldade ajustáveis.
 
 # User Stories:
