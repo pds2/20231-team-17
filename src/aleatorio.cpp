@@ -29,7 +29,7 @@ std::wstring palavra_adivinhada(int numm) {
         int lines_read = 0U;
         while ((lines_read < ajuda) && (std::getline(myfile, line))) {
             if (lines_read == random) {
-                std::wcout << line << "\n";
+                //std::wcout << line << "\n";
                 myfile.close();
                 return line; }
             ++lines_read; } }
