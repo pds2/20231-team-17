@@ -49,8 +49,7 @@ Antes de começar, você vai precisar ter instalado em sua máquina as seguintes
 
 - [Git](https://git-scm.com)
 - Um compilador que suporte a versão c++20 e comando make, ou seja para Windows é recomendavel o uso de WSL.(Sistemas linux normalmente ja vem com o compilador instalado)
--
--
+
 Além disto é bom ter um editor para trabalhar com o código como [VSCode](https://code.visualstudio.com/)
 
 ### 🎲 Rodando o projeto localmente:
