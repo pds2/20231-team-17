@@ -18,9 +18,9 @@ void ignoreLinew() {
 
 std::string get_arquivo(int num) {
     fs::path cdw = fs::current_path();
-    fs::path caminho5 = cdw / "listas" / "lista5letrasUTF8.txt";
-    fs::path caminho6 = cdw / "listas" / "lista6letrasUTF8.txt";
-    fs::path caminho7 = cdw / "listas" / "lista7letrasUTF8.txt";
+    fs::path caminho5 = cdw / "listas" / "palavras5.txt";
+    fs::path caminho6 = cdw / "listas" / "palavras6.txt";
+    fs::path caminho7 = cdw / "listas" / "palavras7.txt";
 
     std::string arq;
     if (num == 5) {
