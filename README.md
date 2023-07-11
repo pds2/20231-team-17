@@ -8,7 +8,9 @@ Termo é um jogo de palavras no qual os jogadores devem tentar adivinhar a palav
 
 ## Mecânica do jogo: 
 O jogo começa com uma palavra inicial (oculta) e o objetivo dos jogadores é adivinhá-la tentando uma cadeia de palavras, usando apenas palavras existentes na língua portuguesa. A cada tentativa o sistema mostrará se o jogador acertou a palavra, se acertou alguma letra ou se tentou enviar alguma palavra que não exista.
+
 Nessa implementação acentos são considerados, portanto á e a são consideradas letras diferentes, e para acertar uma palavra com acento tenho q escreve-la com acento no meu palpite.
+
 Outra particularidade é que como nosso banco de palavras não possui todas as plavras da língua portuguesa, caso o  usuário digite uma palavra que não consta no nosso banco, a tentativa é desconsiderada e é pedido para o jogador digitar uma nova palavra, fazendo assim que o número de tentativas do jogador não diminua caso ele digite uma palavra que não consta no nosso banco de palavras.
 
 
